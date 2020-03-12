@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="title" content="J-Hicks Design - Practical, Stunning Development">
+    <meta name="description"
+          content="Jordan Hicks portfolio, contains the works and designs of Jordan Hicks. Please contact me with any opportunities or requests!">
+    <meta name="keywords"
+          content="Design, Development, HTML, CSS, Javascript, jQuery, Bootstrap, Jordan Hicks, Developer, Portfolio">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Jordan Hicks">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>J-Hicks Design - Practical, stunning development.</title>
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+<div class="container">
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top bg-dark rounded" style="max-width: 1200px;">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse float-right text-right pr-3" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.pdf" target="_blank">My Resume</a>
+                </li>
+                <li><a href="#myModalContact" data-toggle="modal" data-target="#myModalContact" class="nav-link">Contact
+                    Me</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner no-padding px-0">
+                <div class="carousel-item active px-0">
+                    <img class="img-fluid w-100" src="img/SiteLogo.jpg" alt="First slide">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Model -->
+        <div class="modal fade" id="myModalContact" tabindex="-1"
+             role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="myModalLabel">Contact Me</h3>
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+
+                            <div class="row">
+
+                                <div class="col-xl-8 offset-xl-2 py-5">
+
+                                    <h1>Please feel free to contact me!</h1>
+
+                                    <p class="lead">Please feel free to contact me with whatever you may need, thank you
+                                        for checking out my portfolio!</p>
+
+                                    <!-- We're going to place the form here in the next step -->
+                                    <form id="contact-form" method="post" action="contact.php" role="form">
+
+                                        <div class="messages"></div>
+
+                                        <div class="controls">
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="form_name">Firstname *</label>
+                                                        <input id="form_name" type="text" name="name"
+                                                               class="form-control"
+                                                               placeholder="Please enter your firstname *"
+                                                               required="required" data-error="Firstname is required.">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="form_lastname">Lastname *</label>
+                                                        <input id="form_lastname" type="text" name="surname"
+                                                               class="form-control"
+                                                               placeholder="Please enter your lastname *"
+                                                               required="required" data-error="Lastname is required.">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="form_email">Email *</label>
+                                                        <input id="form_email" type="email" name="email"
+                                                               class="form-control"
+                                                               placeholder="Please enter your email *"
+                                                               required="required"
+                                                               data-error="Valid email is required.">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="form_need">Reason for Contact *</label>
+                                                        <select id="form_need" name="need" class="form-control"
+                                                                required="required"
+                                                                data-error="Please chose contact reason.">
+                                                            <option value=""></option>
+                                                            <option value="Request quotation">Job Opportunity</option>
+                                                            <option value="Request order status">Freelance Opportunity
+                                                            </option>
+                                                            <option value="Request copy of an invoice">Networking
+                                                                Opportunity
+                                                            </option>
+                                                            <option value="Other">Other</option>
+                                                        </select>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="form_message">Message *</label>
+                                                        <textarea id="form_message" name="message" class="form-control"
+                                                                  placeholder="Message for me *" rows="4"
+                                                                  required="required"
+                                                                  data-error="Please, leave us a message."></textarea>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="submit" class="btn btn-success btn-send"
+                                                           value="Send message">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p class="text-muted">
+                                                        <strong>*</strong> These fields are required.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </form>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="myModalPoke" tabindex="-1"
+             role="dialog" aria-labelledby="myModalPokeLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="pokeContainer">
+                        <div class="modeContainer">
+                            <form action="" id="form1">
+
+                                <label for="poke-search">
+                                    Poke-Search
+                                </label>
+                                <input id="poke-search" type="text" class="form-control"
+                                       placeholder="Enter Pokemon ID or Name">
+                            </form>
+                            <button type="submit" form="form1" class="btn btn-secondary btn-block" value="Submit">
+                                Submit
+                            </button>
+                            <div id="error"></div>
+                            <div id="loading-image" style="display: none;">
+                                <img alt="Loading..." src="img/ajax-loader.gif">
+                            </div>
+                            <section class="poke-container">
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row border border-secondary rounded">
+            <div class="col-xl-12" style="text-align: center">
+                <h1>Development</h1>
+            </div>
+        </div>
+        <div class="row border border-secondary rounded">
+
+            <div class="col-xl-6 bg-lg  order-xl-2" style="text-align: center;">
+                <h2>Web Development - Missouri Kids</h2>
+                <p>I have always been passionate about web development, so getting a chance to redesign a non-profit
+                    website from the ground up was an extremely enjoyable experience. I worked with a team of seven
+                    other students to change
+                    a very dated looking website into something completely different. I personally helped design the CSS
+                    and home page, as well as helped many other students with their tasks throughout the span of the
+                    project.
+                    This website was designed entirely in WordPress using the Avada theme. We coordinated with the
+                    website
+                    owner to design it to her specifications.
+                </p>
+                <table class="table table-dark">
+                    <thead>
+                    <tr>
+                        <th colspan="2">Skills Applied</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>WordPress</th>
+                        <th>CSS</th>
+                    </tr>
+                    <tr>
+                        <th>Teamwork</th>
+                        <th>Photoshop</th>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-xl-6 bg-lg no-padding" style="text-align: center;">
+                <img src="img/MOKidsAfter.jpg" alt="MO Kids WordPress Example" class="img-fluid border rounded">
+
+            </div>
+        </div>
+        <div class="row border-0 border-secondary rounded">
+            <div class="col-xl-6 bg-llg order-xl-2" style="text-align: center;">
+                <h2>Web Development - Heat Up St. Louis</h2>
+                <p>Heat Up St. Louis was a website I redesigned for a WordPress class, though this site never was pushed
+                    to live production I feel liked I learned the ins and outs of WordPress which I applied in its
+                    entirety
+                    to the Missouri Kids website. I began redesigning this website by planning it out with multiple
+                    wireframes.
+                    I also wanted to capture the concept of heating up
+                    St. Louis by capturing the skyline in blue and red. I decided to keep the layout as minimal as
+                    possible
+                    while focusing on getting people involved.</p>
+                <table class="table table-dark">
+                    <thead>
+                    <tr>
+                        <th colspan="2">Skills Applied</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>WordPress</th>
+                        <th>CSS</th>
+                    </tr>
+                    <tr>
+                        <th>Illustrator</th>
+                        <th>Photoshop</th>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="col-xl-6 bg-llg order-xl-2 no-padding" style="text-align: center;">
+                <img alt="Heat Up St. Louis WordPress Example" src="img/AfterHUSTL.png"
+                     class="img-fluid border rounded">
+            </div>
+        </div>
+        <div class="row border border-secondary rounded">
+            <div class="col-xl-6 bg-lg order-xl-2" style="text-align: center;">
+                <h2>Javascript</h2>
+                <p>This is a project I designed for my JavaScript final, I wanted to test my knowledge of Javascript
+                    and worked to design something that used JQuery and Ajax calls to pull data from an external source
+                    onto my page. The page uses JavaScript to populate the page with Pokemon based on searching by ID
+                    and/or
+                    name. One challenge I ran into while designing the app was with how the PokeAPI was laid out.
+                    Pokemon
+                    types were contained in multiple different arrays which lead to having to iterate over them to get
+                    the
+                    types out and populate them to the page. I found myself researching a lot during this project and
+                    learning
+                    ways to manipulate JavaScript and JQuery that I didn't learn in the class.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalPoke">
+                    Click Here To See It In Action
+                </button>
+            </div>
+            <div class="col-xl-6 bg-lg no-padding" style="text-align: center;">
+                <img src="img/Javascript.png" alt="Javascript Example" class="img-fluid border rounded"
+                     data-toggle="modal" data-target="myModalPoke">
+            </div>
+        </div>
+        <div class="row border-0 border-secondary rounded">
+            <div class="col-xl-6 bg-llg " style="text-align: center;">
+                <h2>Python</h2>
+                <p>I designed this project for a final in my Python class, what we could make was very open ended
+                    but I wanted to design something that utilized a lot of moving parts to really test my programming
+                    capabilities. One of the most difficult things I came across while designing this project was
+                    storing the
+                    tetris pieces currently on the board. I had to use multi-dimensional arrays to store the current
+                    board state and iterate over them when completing a line. Python was the first language I learned
+                    and it really helped me get a sense of what is required when it comes to programming and it is still
+                    a
+                    passion to this day.</p>
+                <img src="img/tetris.png" alt="Python Code Example" class="img-fluid border rounded">
+            </div>
+            <div class="col-xl-6 bg-llg order-xl-2 no-padding" style="text-align: center;">
+                <img src="img/tetris.gif" alt="Python Example" class="img-fluid border rounded">
+            </div>
+        </div>
+        <div class="row border border-secondary rounded">
+            <div class="col-xl-12" style="text-align: center">
+                <h1>Design</h1>
+            </div>
+        </div>
+        <div class="row border border-secondary rounded">
+            <div class="col-xl-4 bg-lg" style="text-align: center;">
+                <h2>Photoshop</h2>
+                <a href="img/Photoshop_Full.png" data-toggle="lightbox">
+                    <img src="img/Photoshop_Small.gif" alt="Photoshop Example" class="img-fluid border rounded">
+                    <p style="text-align: center;">Click to See More</p>
+                </a>
+                <table class="table table-dark">
+                    <thead>
+                    <tr>
+                        <th colspan="2">Techniques Used</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>Masking</th>
+                        <th>Adjustment Layers</th>
+                    </tr>
+                    <tr>
+                        <th>Filters</th>
+                        <th>Cropping/Resizing</th>
+                    </tr>
+                    <tr>
+                        <th>Layer Styles</th>
+                        <th>Blending</th>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-xl-4 bg-lg" style="text-align: center;">
+                <h2>Illustrator</h2>
+                <a href="img/Illustrator_Full.png" data-toggle="lightbox">
+                    <img src="img/Illustrator_Small.jpg" alt="Illustrator Example" class="img-fluid border rounded">
+                    <p style="text-align: center;">Click to See More</p>
+                </a>
+                <table class="table table-dark">
+                    <thead>
+                    <tr>
+                        <th colspan="2">Techniques Used</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>Custom Symbols</th>
+                        <th>Custom Pattern</th>
+                    </tr>
+                    <tr>
+                        <th>Filters</th>
+                        <th>Layering</th>
+                    </tr>
+                    <tr>
+                        <th>Pen/Brush Tool</th>
+                        <th>Pathfinder</th>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-xl-4 bg-lg" style="text-align: center;">
+                <h2>After Effects</h2>
+                <a href="http://www.youtube.com/watch?v=a4meXyaW22w" data-toggle="lightbox"
+                   data-gallery="youtubevideos">
+                    <img src="img/Aftereffects.gif" alt="After Effects Example" class="img-fluid border rounded">
+                    <p style="text-align: center;">Click to See More</p>
+                </a>
+                <table class="table table-dark">
+                    <thead>
+                    <tr>
+                        <th colspan="2">Techniques Used</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>3D Lighting</th>
+                        <th>Masking</th>
+                    </tr>
+                    <tr>
+                        <th>Effects</th>
+                        <th>Keyframes/Transformations</th>
+                    </tr>
+                    <tr>
+                        <th>Blending</th>
+                        <th>Puppet Warp</th>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3 style="text-align: center">About This Site</h3>
+        <div class="row">
+            <div class="col-xl-4" style="text-align:center">
+                <a href="#myModalContact" data-toggle="modal" data-target="#myModalContact" class="nav-link"><p>Please
+                    Contact Me with any opportunities or questions.</p></a>
+            </div>
+            <div class="col-xl-4" style="text-align:center">
+                <p>Website designed using HTML, CSS, Bootstrap, and Javascript/JQuery. Copyright © J-Hicks Design 2019,
+                    All Rights Reserved.</p>
+            </div>
+            <div class="col-xl-4" style="text-align:center">
+                <p>Socials Media: <a href="https://www.facebook.com/jordan.hicks.18400" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>&nbsp
+                    <a href="https://www.linkedin.com/in/jordan-hicks-7198a0167/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a><br>
+                    <a href="tel:9413233461">Call me at 941-323-3461</a></p>
+            </div>
+        </div>
+
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/pokeScript.js"></script>
+</body>
+</html>

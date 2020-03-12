@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Permanent+Marker');
+
+$background-color: #CAD2DE;
+$font-color: black;
+$maincolor1: teal;
+$linkcolor: darkgrey;
+$maincolor2: #e2e2e2;
+$headfont: 'Permanent Marker';
+$mainfont: 'Open Sans';
+
+
+* {
+  box-sizing: border-box;
+}
+
+.pokeContainer {
+
+  .modeContainer {
+    max-width: 800px;
+    margin: auto;
+    background: lightskyblue;
+    border-style: outset;
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+
+  .pokemon {
+    border-style: inset;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 10px;
+    height: auto;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  button {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  input {
+    font-size: 12px;
+  }
+
+  h2 {
+    margin-top: 30px;
+    font-size: 15px;
+    color: #81A594;
+    font-family: $mainfont
+  }
+
+  h3 {
+    margin-top: 30px;
+    font-size: 15px;
+    color: black;
+    font-family: $mainfont
+  }
+
+  img {
+    max-height: 80px;
+  }
+
+  #error {
+    text-align: center;
+  }
+
+  #loading-image {
+    padding-top: 5px;
+    text-align: center;
+  }
+
+  form {
+    text-align: center;
+  }
+
+  body {
+    background-color: lightgrey
+  }
+
+  @media screen and (max-width: 768px) {
+    h2 {
+      text-align: center;
+    }
+    h3 {
+      text-align: center;
+    }
+    img {
+      max-height: 100px;
+      max-width: 100px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: $background-color;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: black;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  font-weight: bold;
+}
+
+.bg-dark {
+  background: transparent !important;
+}
+
+.bg-dark.scrolled {
+  background-image: url("../img/SiteLogoLong.jpg") !important;
+  background-position: 58.33325% center !important;
+  background-repeat: no-repeat !important;
+}
+
+nav.navbar {
+  width: inherit;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+body {
+  background-color: lightgrey;
+  color: $font-color;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+a {
+  color: $maincolor1;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: $headfont;
+
+}
+
+p {
+  font-family: $mainfont;
+}
+
+.bg-llg {
+  background: #A0AFC4;
+}
+
+.bg-lg {
+  background: #8B9EB7;
+}
+
+main {
+}
+
+//img {max-width: 100%;
+//    height: auto;}
+
+header {
+  width: auto;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+@media screen and (max-width: 570px) {
+  .bg-dark.scrolled {
+    background-image: url("../img/SiteLogoWide.jpg") !important;
+    background-position: 58.33325% center !important;
+    background-repeat: no-repeat !important;
+  }
+}
